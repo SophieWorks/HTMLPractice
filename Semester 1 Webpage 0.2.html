@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Semester 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+	
+	<style>
+	
+	.centerText {
+		position:absolute;
+		left: 10%;
+		top:-6%;
+	}
+	
+	.centerTextBelow {
+		position:absolute;
+		left:43%;
+		top:18%;
+	}
+	
+	
+
+/***** MAIN BUTTON PROPERTIES *****/		
+	.buttonMain{
+		border: none;
+		top:33%;
+		border-radius: 28%;
+		padding: 0px 35px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+	
+	}
+	
+/***** #0 BACK BUTTON *****/	
+	.buttonBack{
+		background-color:#5A5250;
+		border-radius: 20%;
+		border: none;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		color: white;
+		padding: 0px 30px;
+		cursor: pointer;
+
+	}
+	
+	.buttonBack:hover{
+		background-color:#443E3C;
+		color: white;
+		transition-duration: 0.3s;
+	}
+	
+/***** #1 2Z03*****/	
+	.button2Z03{
+		background-color:#E1CEC9;
+		position: absolute;
+		left:20%;
+		color: black;
+	}
+	
+	.button2Z03:hover{
+		background-color:#5A5250;
+		color: white;
+		transition-duration: 0.1s;
+	}
+
+/***** #2 2NE3*****/	
+	.button2NE3{
+		background-color:#D7C6C2;
+		position: absolute;
+		left:34%;
+		color: black;
+	}
+	
+	.button2NE3:hover{
+		background-color:#5A5250;
+		color: white;
+		transition-duration: 0.1s;
+	}
+
+/***** #3 2II3*****/		
+	.button2II3{
+		background-color:#C4B7B3;
+		position: absolute;
+		left:48%;
+		color: black;
+	}
+	
+	.button2II3:hover{
+		background-color:#5A5250;
+		color: white;
+		transition-duration: 0.1s;
+	}
+	
+/***** #4 2A04*****/		
+	.button2A04{
+		background-color:#B1A7A5;
+		position: absolute;
+		left:62%;
+		color: black;
+	}
+	
+	.button2A04:hover{
+		background-color:#5A5250;
+		color: white;
+		transition-duration: 0.1s;
+	}
+	
+/***** #5 2P04*****/		
+	.button2P04{
+		background-color:#9E908D;
+		position: absolute;
+		left:76%;
+		color: black;
+	}
+	
+	.button2P04:hover{
+		background-color:#5A5250;
+		color: white;
+		transition-duration: 0.1s;
+	}
+
+
+
+/***** SUBMIT BUTTON PROPERTIES *****/		
+	.buttonSub{
+		border: none;
+		border-radius: 30%;
+		padding: 0px 15px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+	
+	}
+
+	
+/***** 2P04 SUBMIT BUTTON *****/		
+	.button2P04Sub{
+		background-color:#443E3C;
+		position: relative;
+		left:45%;
+		top: 35px;
+		color: white;
+		padding: 0px 30px;
+	}
+	
+	.button2P04Sub:hover{
+		background-color:#2D2928;
+		color: white;
+		transition-duration: 0.1s;
+	}
+	
+
+/***** 2P04 RESET BUTTON *****/		
+	.button2P04Res{
+		background-color:#443E3C;
+		position: relative;
+		left: -55%;
+		top: 35px;
+		color: white;
+		padding: 0px 30px;
+	}
+	
+	.button2P04Res:hover{
+		background-color:#2D2928;
+		color: white;
+		transition-duration: 0.1s;
+	}
+
+
+	
+/* Container for 2P04 Mark Calculator */
+	.container2P04{
+		position:absolute;
+		top:50%;
+		left:32%;	
+		border: solid;
+		padding: 10px 200px;
+		border-color: #2D2928;
+		padding-bottom:60px;
+	
+	
+	}
+	
+/* Bottom Border */
+	.borderBot{
+		border-bottom: solid;
+		border-color:black;
+		padding-bottom:40px;
+		position:relative;
+		top:20px;
+		left:20px;
+		width:100%;
+	
+	}
+
+
+/* Input Box Properties */	
+	input[type="number"]{
+		width: 60%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: block;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		box-sizing: border-box;
+	}
+
+
+	.containerBot{
+		position:absolute;
+		bottom:-690px;
+		width:100%;
+		left: -6px;
+		border: solid;
+		border-color: #2D2928;
+		background-color:#2D2928;
+		padding-bottom:110px;
+		padding-top:110px;
+		color: #F9F5F4;
+		z-index:1
+	}
+
+	
+	body{
+	height:100%;
+	box-sizing: border-box;
+	
+	}
+	
+	
+/* Submit Box Properties */	
+ 	.SubmitBox{
+		position:absolute;
+		top:90%;
+		left:25%;	
+		border: solid;
+		padding: 10px 200px;
+		border-color: #2D2928;
+		padding-bottom:60px;
+	
+	}
+	
+
+	</style>
+	
+</head>
+
+<body style="background-color:#F9F5F4">
+
+
+	<div class="centerText">
+		<p style = " font-family:'Oswald', sans-serif; font-size:100px; font-style: italic; text-transform: uppercase; color: #2D2928;"> 
+			Semester 1 Mark Calculator
+		</p> 
+	</div>	
+	
+	
+	<div class="centerTextBelow">
+		<p style = " font-family:'Oswald', sans-serif; font-size:40px; text-transform: uppercase;border-bottom: 3px solid #5A5250; color:#5A5250;"> 
+			Select a Course
+		</p> 
+	</div>	
+
+
+<!-- ***** #0 BACK BUTTON ***** -->		
+	<a href="file:///D:/Documents/Universitry/Projects/HTML%20Webpage%201/Webpage%200.2.html" target="_blank">
+		<button class="buttonBack">
+			<p style = " font-family:'Oswald', sans-serif; font-size:20px; text-transform: uppercase;"> 
+				Back 
+			</p>
+		</button>
+	</a>
+	
+<!-- ***** #1 button2Z03 ***** -->		
+	<button class="buttonMain button2Z03">
+		<p style = " font-family:'Oswald', sans-serif; font-size:25px; font-style: bold; text-transform: uppercase;"> 
+			2Z03 
+		</p>
+	</button>
+	
+	
+<!-- ***** #2 button2NE3 ***** -->		
+	<button class="buttonMain button2NE3">
+		<p style = " font-family:'Oswald', sans-serif; font-size:25px; font-style: bold; text-transform: uppercase;"> 
+			2NE3 
+		</p>
+	</button>
+	
+	
+<!-- ***** #3 button2II3 ***** -->	
+	<button class="buttonMain button2II3">
+		<p style = " font-family:'Oswald', sans-serif; font-size:25px; font-style: bold; text-transform: uppercase;"> 
+			2II3 
+		</p>
+	</button>
+	
+
+<!-- ***** #4 button2A04 ***** -->		
+	<button class="buttonMain button2A04">
+		<p style = " font-family:'Oswald', sans-serif; font-size:25px; font-style: bold; text-transform: uppercase;"> 
+			2A04 
+		</p>
+	</button>
+	
+	
+<!-- ***** #5 button2P04 ***** -->		
+		
+	<button class="buttonMain button2P04" onclick="showCalc()">
+		<p style = " font-family:'Oswald', sans-serif; font-size:25px; font-style: bold; text-transform: uppercase;"> 
+			2P04 
+		</p>
+	</button>
+	
+	
+
+<!-- ***** 2P04 Calculator ***** -->		
+	<div class="container2P04" id="oswald" style="display:none;">	
+		<form>
+		
+			<p style = " font-family:'Oswald', sans-serif; font-size:40px; font-style: bold;  color: #2D2928;"> 
+				Please Insert Marks 
+			</p>
+				
+			<label for="groupA">
+				<p style = " font-family:'Oswald', sans-serif; font-size:20px; font-style: bold;"> 
+					Group Assignment: 
+				</p>
+			</label>
+			<input type="number" id="groupA" name="groupA" min="0" max="100">
+		  
+			<label for="examO">
+				<p style = " font-family:'Oswald', sans-serif; font-size:20px; font-style: bold;"> 
+					Oral Exam:
+				</p>
+			</label>
+		 	<input type="number" id="examO" name="examO" min="0" max="100">
+			
+			<label for="midOne">
+				<p style = " font-family:'Oswald', sans-serif; font-size:20px; font-style: bold;"> 
+					Midterm 1:
+				</p>
+			</label>
+			<input type="number" id="midOne" name="midOne" min="0" max="100">
+					
+			<label for="midTwo">
+				<p style = " font-family:'Oswald', sans-serif; font-size:20px; font-style: bold;"> 
+					Midterm 2:
+				</p>
+			</label>
+			<input type="number" id="midTwo" name="midTwo" min="0" max="100">
+					
+			<label for="final">
+				<p style = " font-family:'Oswald', sans-serif; font-size:20px; font-style: bold;"> 
+					Final Exam:
+				</p>
+			</label>
+			<input type="number" id="final" name="final" min="0" max="100" > <br>
+		
+			<button class="buttonSub button2P04Sub" onclick="showSubmit()">
+					<p style = " font-family:'Oswald', sans-serif; font-size:18px; font-style: bold; text-transform: uppercase;"> 
+						Submit
+					</p>
+			</button> 
+		
+			<button class="buttonSub button2P04Res" type="reset">
+					<p style = " font-family:'Oswald', sans-serif; font-size:18px; font-style: bold; text-transform: uppercase;"> 
+						Reset
+					</p>
+			</button> 
+			
+		</form>			
+	</div>
+	
+	
+
+<!-- ***** SUBMIT Container ***** -->		
+	<div class="SubmitBox" id="submitOpen" style="display:none;">
+		<p style = " font-family:'Oswald', sans-serif; font-size:100px; font-style: italic; color: #2D2928;"> 
+			Semester 2
+		</p> 
+	</div>	
+		
+		
+
+
+<!-- ***** Bottom Container ***** -->	
+	<div class="containerBot" >
+		<p style = " font-family:'Montserrat', sans-serif; font-size:18px; font-style: bold; text-transform: uppercase; position:absolute; left: 44%;"> 
+			Made by 
+			<a href = "https://www.linkedin.com/in/sophie-zhang-86b11b194/" target="_blank"
+			style="cursor:pointer; font-family:'Montserrat', sans-serif; font-size:18px; font-style: bold; text-transform: uppercase; 
+			color:#F9F5F4; text-decoration:none;">
+				sophie.Z
+			</a>
+		</p>	
+	</div>
+	
+	
+	
+	<!-- I think i need this -->
+	<!-- <p id="printL"></p> -->
+	
+	
+	<script>
+
+		
+		function showCalc() {
+		  var x = document.getElementById("oswald");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		
+		
+	
+		function showSubmit(){
+		var x = document.getElementById("submitOpen");
+			if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		
+		
+	
+	</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
